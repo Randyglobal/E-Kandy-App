@@ -1,0 +1,38 @@
+<mat-toolbar>
+    <div class="top-nav container">
+        <div class="logo-block">
+            <div class="logo">
+                <p>KS</p>
+            </div>
+        </div>
+
+        <div class="navigate">
+
+            <ul class="nav-elements">
+                <li class="nav-element"><a routerLink="#" class="links">{{ancho.home | titlecase}}</a></li>
+                <li class="nav-element"><a routerLink="#" class="links">{{ancho.blog | titlecase}}</a></li>
+                <li class="nav-element"><a routerLink="#" class="links">{{ancho.services | titlecase}}</a></li>
+                <li class="nav-element"><a routerLink="#" class="links">{{ancho.help | titlecase}}</a></li>
+                <li class="nav-element"><a routerLink="#" class="links">{{ancho.contactus | titlecase}}</a></li>
+
+            </ul>
+        </div>
+
+
+        <div class="checkAccount">
+            
+            <button mat-button class="content">
+                <mat-icon matBadge="1" matBadgeColor="accent"
+                    style="margin-top: 10px; font-size: 35px;">add_shopping_cart</mat-icon>
+                <!-- Should be activated when clicked -->
+                <!-- <mat-icon>remove_shopping_cart</mat-icon> -->
+                <p style="font-size: 14px;">Add card</p>
+            </button>
+            <div class="menu-icon">
+                <button mat-button class="mat-icon">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+</mat-toolbar>

@@ -1,0 +1,102 @@
+@media (max-width: 765px) {
+    mat-toolbar {
+        width: 100%;
+        background: white;
+        // background: blue;
+
+        .top-nav {
+            // background: red;
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+            margin-top: 20px;
+
+            .logo {
+                background-image: url(../../assets/img/logoGWS.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100px;
+                height: 60px;
+
+                p {
+                    // position: absolute;
+                    padding-left: 4rem;
+                    padding-top: 2rem;
+                    color: orange;
+                }
+            }
+
+            .navigate {
+                width: 60%;
+                // background: red;
+                ul {
+                    // margin-left: -12rem;
+                    // width: 20%;
+                    margin-top: 18px;
+
+                    li {
+                        list-style: none;
+                        display: none;
+                        margin-left: 9%;
+
+                        a {
+                            color: black;
+                            text-decoration: none;
+
+                            &:hover {
+                                transition: 1s ease-in-out;
+                                color: rgb(0, 145, 255);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .checkAccount {
+                // margin-left: -10px;
+                display: flex;
+
+                .menu-icon {
+                    display: block;
+
+                    .mat-icon{
+                        width: 40px;
+                        height: 40px;
+                        cursor: pointer;
+                        margin-top: 10px;
+                       background: white;
+                    }
+
+                    mat-icon{
+                        font-size:  30px;
+                    }
+                }
+
+                .content {
+                    cursor: pointer;
+                    height: 20px;
+                    border: none;
+                    outline: none;
+                    background: white;
+
+                    p {
+                        margin-top: 2px;
+                    }
+
+                    &:hover {
+                        color: orange;
+                    }
+
+                    mat-icon {
+                        margin-left: -25px;
+                        &:hover {
+                            transition: 2s ease-in-out;
+                            margin-left: 30px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
