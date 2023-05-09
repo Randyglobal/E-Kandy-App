@@ -6,63 +6,124 @@
     display: flex;
     justify-content: space-between;
 
-    .main-container {
-
+    .container {
         display: flex;
         justify-content: space-between;
+
         .menu-icon {
-            background: red;
-            width: 20%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 3px;
+            width: 18%;
 
-            button {
-                background: blue;
-                // width: 10px;
-                // height: 40px;
-                // margin-top: -20px;
+            .mat-icon {
+                width: 30px;
+                height: 40px;
+                cursor: pointer;
+                margin-top: 5px;
+                background: transparent;
+            }
 
-                mat-icon {
-                    background: yellow;
-                    font-size: 35px;
-                    color: white;
-                }
+            .menu {
+                font-size: 30px;
             }
 
             p {
-                margin-top: 10px;
-                color: white;
                 font-size: 17px;
-                text-align: center;
+                margin-top: 5px;
             }
         }
         .category-search{
-            background: yellow;
-            width: 60%;
-           input{
-            width: 100%;
-            height: 30px;
-           }
-        }
+            display: flex;
+            width: 62%;
+            background: transparent;
+
+            form{
+                width: 90%;
+                margin: 15px auto auto 50px;
+                input{
+                    padding: 8px;
+                    width: 95%;
+                    margin-top: -40px;
+                    border: none;
+                    outline: none;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+
+                    &:focus{
+                        border: 1px solid white;
+                        transition: 1s;
+                    }
+                   
+                }
+                ::placeholder{
+                    font-size: 16px;
+                }
+            }
+            .search{
+                background: white;
+                margin-top: 9px;
+                height: 31px;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                margin-left: -30px;
+                
+                mat-icon{
+                    font-size: 25px;
+                }
+            }
+            }
         .register{
-            width: 12%;
             display: flex;
             justify-content: space-between;
-            button{
-                background: rgba(255, 255, 255, 0.721);
+            width: 150px;
+            background: transparent;
+            .control-btn{
+                width: 150px;
+                display: flex;
+                justify-content: space-between;
+                margin-left: 10px;
+            .sign-btn{
+                // display: block;
+                padding: 9px;
+                background: white;
+                border-radius: 1px;
+                margin-top: 5px;
+                font-weight: 500;
                 a{
-                    font-size: 17px;
+                    text-decoration: none;
+                    font-size: 16px;
                     color: black;
                 }
                 &:hover{
-                 background: orange;
-                 a{
-                 color: white;
-                 }
+                    background: orange;
+                    a{
+                        color: white;
+                    }
                 }
             }
+        }
+
+            .menu-icon-button {
+                display: none;
+                width: 18%;
+    
+                .mat-icon {
+                    width: 30px;
+                    height: 40px;
+                    cursor: pointer;
+                    margin-top: 5px;
+                    background: transparent;
+                }
+    
+                .menu {
+                    font-size: 30px;
+                }
+    
+                p {
+                    font-size: 17px;
+                    margin-top: 5px;
+                }
+            }
+
         }
     }
 }

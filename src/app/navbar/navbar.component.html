@@ -1,25 +1,16 @@
-<!-- <nav class="second-nav">
-    <div class="main-container">
+<nav class="second-nav">
+    <div class="container">
         <div class="menu-icon">
             <button mat-button class="mat-icon">
-                <mat-icon>menu</mat-icon>
+                <mat-icon class="menu">menu</mat-icon>
             </button>
             <p>Shop By Categories</p>
         </div>
         <div class="category-search">
-         <button mat-button class="category-items">
-            Category
-            <mat-select formControlName="shopping" class="mat-select">
-                <mat-option *ngFor="let shop of shopping" [value]="shop">
-                    {{shop | titlecase}}
-                </mat-option>
-            </mat-select>
-            </button>
-
-        <mat-form-field>
-            <input (keyup)="filterSearch($event)" type="text" #input placeholder="search......">
-        </mat-form-field>
-        <button mat-icon-button class="search">
+        <form action="" method="post">
+            <input (keyup)="filterSearch($event)" type="text" #input placeholder="search item......">
+        </form>
+        <button mat-button class="search">
             <mat-icon>
                 search
             </mat-icon>
@@ -27,16 +18,23 @@
         </div>
 
         <div class="register">
+            <div class="control-btn">
             <div class="signin">
-            <button class="btn">
+            <button class="sign-btn">
                 <a routerLink="">Signin</a>
             </button>
             </div>
             <div class="signup">
-            <button class="btn">
+            <button class="sign-btn">
                 <a routerLink="">Signup</a>
             </button>
             </div>
+            </div>
+            <div class="menu-icon-button">
+                <button mat-button class="mat-icon">
+                    <mat-icon class="menu">menu</mat-icon>
+                </button>
+            </div>
         </div>
     </div>
-</nav> -->
+</nav>

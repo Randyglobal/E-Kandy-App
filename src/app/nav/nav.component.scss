@@ -63,7 +63,7 @@
                     height: 20px;
                     border: none;
                     outline: none;
-                    background: white;
+                    background: transparent;
 
                     p {
                         margin-top: 2px;
@@ -71,7 +71,7 @@
 
                     &:hover {
                         color: orange;
-                        background: white;
+                        // background: white;
 
                     }
 

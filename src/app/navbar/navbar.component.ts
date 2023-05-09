@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'kandy-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.scss','./mobile.component.scss']
 })
 export class NavbarComponent {
 
