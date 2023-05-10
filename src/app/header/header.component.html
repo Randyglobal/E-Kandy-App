@@ -1,20 +1,21 @@
 <header>
-    <br> 
-    <div *ngIf="image && image.length > 0" class="header-container">
-        <img *ngFor="let i = index; let images of image;"
-         [src]="images.imageSrc" [alt]="images.imageAlt"
-          [ngClass]="{'active-image': imageSelected === i}" class="fade">
-          <div class="section-container">
-
-            <!-- Continue with header after you've seen a good design with good pictures -->
-            <h1>dkjvgsbdycgh kchg</h1>
-            <div *ngIf="dotted" class="dotted">
-               <span *ngFor="let i = index; let dots of image" class="dots"
-                [ngClass]="{'active-Dots': imageSelected === i}" (click)="toggle(i)">
-
-               </span>
-            </div>
-          </div>
+  <br>
+  <div *ngIf="image && image.length > 0" class="header-container">
+    <img *ngFor="let i = index; let images of image;" [src]="images.imageSrc" [alt]="images.imageAlt"
+      [ngClass]="{'active-image': imageSelected === i}" class="fade">
+    <div class="section-container">
+    
+      <!-- Continue with header after you've seen a good design with good pictures -->
+      <h1>dkjvgsbdycgh kchg</h1>
+      <div *ngIf="dotted" class="dotted">
+        <span *ngFor="let i = index; let dots of image" class="dots" [ngClass]="{'active-Dots': imageSelected === i}"
+          (click)="toggle(i)">
+    
+        </span>
+      </div>
     </div>
-
+   
+  </div>
+  <div class="aside">
+  </div>
 </header>

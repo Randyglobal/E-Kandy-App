@@ -9,19 +9,19 @@ export class HomeComponent {
 
   images =[
     {
-      imageSrc: '../../assets/img/Best-Delivery-Apps.jpg',
+      imageSrc: '../../assets/img/phone.jpg',
       imageAlt: 'shop1',
     },
     {
-      imageSrc: '../../assets/img/Kids.jpg',
+      imageSrc: '../../assets/img/pc.jpeg.jpg',
       imageAlt: 'shop2',
     },
     {
-      imageSrc: '../../assets/img/Custom.jpeg',
+      imageSrc: '../../assets/img/supermarket.jpg',
       imageAlt: 'shop3',
     },
     {
-      imageSrc: '../../assets/img/hero.webp',
+      imageSrc: '../../assets/img/tablet.jpg',
       imageAlt: 'shop3',
     },
   ]

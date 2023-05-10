@@ -18,6 +18,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
+import { SectionComponent } from './pages/section/section.component';
+import { SectionTwoComponent } from './pages/section-two/section-two.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import {MatButtonModule} from '@angular/material/button';
     FooterComponent,
     SigninComponent,
     SignupComponent,
-    HomeComponent
+    HomeComponent,
+    SectionComponent,
+    SectionTwoComponent
   ],
   imports: [
     BrowserModule,
